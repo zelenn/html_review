@@ -1,8 +1,12 @@
 /* Это внешний файл стилей */
 body {
     background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
 }
 
+/* Стили для ссылок */
 a {
     color: blue;
     text-decoration: none;
@@ -11,8 +15,66 @@ a {
 a:hover {
     text-decoration: underline;
 }
-/*в ксысы: разные способы комбы атомов через пробелы и запятые и уголки*/
 
-/*в хтмл: добавить таблицы форматирования, типа как меню где слева ссылки справа баннеры*/
+/* Комбинирование селекторов через пробелы, запятые и уголки */
+div, p {
+    margin-bottom: 10px;
+}
 
-/*margin-bottom: 10px; на примере етого похожие разные штуки есть, up down типа того лол*/
+div .highlight {
+    background-color: yellow;
+    padding: 5px;
+}
+
+ul > li {
+    list-style: circle;
+}
+
+ol li + li {
+    margin-top: 5px;
+}
+
+/* Пример с up, down */
+.container {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.left-section {
+    float: left;
+    width: 30%;
+}
+
+.right-section {
+    float: right;
+    width: 65%;
+    text-align: center;
+}
+
+/* Стили для таблиц */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f0f0f0;
+    font-weight: bold;
+}
+
+.banner {
+    text-align: center;
+    background-color: #e0f7fa;
+    padding: 20px;
+    font-size: 18px;
+    color: #00796b;
+}
