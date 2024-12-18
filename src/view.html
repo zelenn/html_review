@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Обзор HTML и CSS</title>
+
+    <!-- Подключение внешнего CSS-файла -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Встроенный стиль в теге style -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        div {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        .highlight {
+            color: green;
+            font-weight: bold;
+        }
+        .center {
+            text-align: center;
+        }
+        .marquee-text {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <!-- Пример basefont -->
+    <basefont face="Helvetica" size="3" color="blue">
+    <p>Этот текст использует тег <code>&lt;basefont&gt;</code>.</p>
+
+    <hr>
+
+    <p style="font-size: 20px; color: purple;">Это абзац с инлайновым стилем (изменён размер и цвет шрифта).</p>
+    
+    <b>Жирный текст с тегом b</b> и <strong>жирный текст с тегом strong</strong> (строгое выделение).  
+    <i>Курсивный текст с тегом i</i> и <em>курсивный текст с тегом em (более семантический)</em>.
+
+    <br><br>
+
+    <u>Подчёркнутый текст тегом u</u><br>
+    <s>Зачёркнутый текст с использованием s</s><br>
+    <strike>Зачёркнутый текст с использованием strike</strike><br>
+    <small>Мелкий текст small</small><br>
+    <span class="highlight">Это span с классом highlight</span>
+
+    <br><br>
+
+    <!-- Пример ссылки -->
+    <a href="https://example.com" target="_blank">Ссылка на внешний ресурс (a)</a>
+    
+    <br><br>
+
+    <!-- Пример div -->
+    <div>
+        Это div - блоковый элемент.
+        <p>А это параграф (p) внутри div.</p>
+        <blockquote>Цитата внутри div при помощи blockquote.</blockquote>
+    </div>
+
+    <!-- Пример center -->
+    <center>
+        <p>Текст по центру с использованием тега center.</p>
+    </center>
+
+    <!-- Пример fieldset -->
+    <fieldset>
+        <legend>Группировка элементов с помощью fieldset</legend>
+        <p>Введите ваш ip адрес:</p>
+        <input type="text" id="name">
+    </fieldset>
+
+    <!-- Списки -->
+    <ol>
+        <li>Первый пункт упорядоченного списка (ol/li)</li>
+        <li>Второй пункт</li>
+    </ol>
+
+    <ul>
+        <li>Первый пункт неупорядоченного списка (ul/li)</li>
+        <li>Второй пункт</li>
+    </ul>
+    
+    <!-- Пример marquee -->
+    <marquee class="marquee-text">Это бегущая строка при помощи marquee</marquee>
+
+    <!-- Дополнительный пример инлайн стилей -->
+    <div style="font-family: Courier; color: green;">
+        Это инлайн стиль для текста.
+    </div>
+
+    <!-- Пример использования span -->
+    <p>Пример с использованием <u>подчёркивания</u> и <span style="color: purple;">кастомного стиля через span</span>.</p>
+
+</body>
+</html>
